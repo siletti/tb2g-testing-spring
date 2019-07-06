@@ -17,7 +17,7 @@ class HearingInterpreterLaurelTest {
 
     @Test
     void whatIHeard() {
-        String word = hearingInterpreter.WhatIHeard();
+        String word = hearingInterpreter.whatIHeard();
         assertTrue(word.equals("Laurel"));
     }
 }

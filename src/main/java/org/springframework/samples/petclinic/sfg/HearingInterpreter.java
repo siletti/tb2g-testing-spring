@@ -10,7 +10,7 @@ public class HearingInterpreter {
         this.wordProducer = wordProducer;
     }
 
-    public String WhatIHeard() {
+    public String whatIHeard() {
         String word = wordProducer.getWord();
         System.out.println(word);
         return word;
