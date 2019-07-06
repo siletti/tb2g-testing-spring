@@ -2,9 +2,9 @@ package org.springframework.samples.petclinic.sfg;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.test.context.ActiveProfiles;
+import org.springframework.context.annotation.Profile;
 
-@ActiveProfiles("base-test")
+@Profile("base-test")
 @Configuration
 public class YannyConfig {
     @Bean

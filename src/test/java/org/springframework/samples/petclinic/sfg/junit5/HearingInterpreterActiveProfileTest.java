@@ -14,6 +14,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringJUnitConfig(classes = HearingInterpreterActiveProfileTest.TestConfig.class)
 public class HearingInterpreterActiveProfileTest {
 
+    @Configuration
+    @ComponentScan("org.springframework.samples.petclinic.sfg")
+    static class TestConfig {
+    }
+
     @Autowired
     HearingInterpreter hearingInterpreter;
 
@@ -21,10 +26,5 @@ public class HearingInterpreterActiveProfileTest {
     void whatIHeard() {
         String word = hearingInterpreter.whatIHeard();
         assertEquals("Yanny", word);
-    }
-
-    @Configuration
-    @ComponentScan("org.springframework.samples.petclinic.sfg")
-    static class TestConfig {
     }
 }
